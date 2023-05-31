@@ -9,11 +9,14 @@ namespace SearchItUnitTest
             WordListService wordListService = new();
             Words = wordListService.GetAllWords();
         }
+        /// <summary>
+        /// This test checks if the expected amount of nut null words are containt in the WordList.
+        /// </summary>
         [Fact]
         public void IsTheCountOfWordsInTheWordListCorrect()
         {
             Assert.IsAssignableFrom<IEnumerable<String>>(Words); // Stimmt der Datentyp
-            Assert.True(Words.Count()==(int)Math.Pow(26,4));
+            Assert.True(Words.Count((word)=>word!=null)==(int)Math.Pow(26,4));
         }
 
         /// <summary>
