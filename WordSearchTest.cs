@@ -4,6 +4,9 @@ namespace SearchItUnitTest
 {
     public class WordSearchTest
     {
+        /// <summary>
+        /// Tests if the search result has the correct amount of words based on the length of the search text.
+        /// </summary>
         [Fact]
         public void SearchResultContainsCorrectCountOfWords()
         {

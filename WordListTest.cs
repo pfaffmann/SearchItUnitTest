@@ -30,7 +30,9 @@ namespace SearchItUnitTest
                 Assert.Contains($"{c}{c}{c}{c}", Words);
             }
         }
-
+        /// <summary>
+        /// This test checks if a random four lettered word is in the wordlist.
+        /// </summary>
         [Fact]
         public void ContainsWordListARandomWord()
         {
@@ -45,7 +47,9 @@ namespace SearchItUnitTest
 
             Assert.Contains(SearchText,Words);
         }
-
+        /// <summary>
+        /// This tests checks if a thousand random four lettered words are in the wordlist.
+        /// </summary>
         [Fact]
         public void ContainsWordList1000RandomWords()
         {
